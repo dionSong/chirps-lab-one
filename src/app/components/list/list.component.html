@@ -1,16 +1,22 @@
 <div class="container">
   <div class="one">
     <div *ngFor ="let message of log" class="bg-msg one">
-      <li>{{message}}</li>
-      <span>from: {{this.name}}</span>
-      <span>Total Chirps: {{this.chirps}}</span><br>
-      <span>fav show: {{this.favoriteShow}}</span>  
+        <mat-card>
+            <mat-card-title>{{this.name}} says:</mat-card-title>
+            <mat-card-subtitle>Total Chirps: {{this.chirps}}</mat-card-subtitle>
+            <mat-card-content>{{message}}</mat-card-content>
+        </mat-card>
+        
+      
     </div>
   </div> 
 </div>  
 
-<div class="test">
-  <form (submit)="writeMessage(message.value)" action="" name="form">
+<div>
+
+
+  
+ <form (submit)="writeMessage(message.value)" action="" name="form">
       <label for="message"></label>
       <input type="text" #message name=""  placeholder="Say Something" required>
       <button type="submit" required>Send</button>
