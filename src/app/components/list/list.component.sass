@@ -1,0 +1,35 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+
+
+.container
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: minmax(100px, auto)
+    border: 1px solid green
+
+    .one
+        grid-column: 2/4
+        grid-row: 1
+        border: 1px solid green
+        grid-gap: 1rem
+
+    li
+        list-style-type: none
+        
+
+    .bg-msg
+        background: #fff    
+        
+.test
+    width: 400px
+    margin-right: auto
+    margin-left: auto
+    
+
+          
+
+    
+
+div
+    background-color: $primary-bg-color
