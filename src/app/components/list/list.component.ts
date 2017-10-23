@@ -28,18 +28,12 @@ export class ListComponent implements OnInit {
     
   }
   writeMessage(message){
-    
-
 
     this.log.push(message);
     this.chirps++;
     console.log(this.log);
-
     document.forms['form'].reset(); 
     return false;
-    
-    
-    
   }
 
 }

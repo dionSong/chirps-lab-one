@@ -2,9 +2,10 @@
   <div class="one">
     <div *ngFor ="let message of log" class="bg-msg one">
         <mat-card>
-            <mat-card-title>{{this.name}} says:</mat-card-title>
-            <mat-card-subtitle>Total Chirps: {{this.chirps}}</mat-card-subtitle>
-            <mat-card-content>{{message}}</mat-card-content>
+            <img mat-card-image src="https://s-media-cache-ak0.pinimg.com/originals/7c/c7/a6/7cc7a630624d20f7797cb4c8e93c09c1.png">
+            <mat-card-title class="content">{{this.name}} says:</mat-card-title>
+            <mat-card-subtitle class="content">Total Chirps: {{this.chirps}}</mat-card-subtitle>
+            <mat-card-content class="content">{{message}}</mat-card-content>
         </mat-card>
         
       
