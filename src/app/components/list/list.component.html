@@ -7,17 +7,12 @@
             <mat-card-subtitle class="content">Total Chirps: {{this.chirps}}</mat-card-subtitle>
             <mat-card-content class="content">{{message}}</mat-card-content>
         </mat-card>
-        
-      
     </div>
   </div> 
 </div>  
 
 <div>
-
-
-  
- <form (submit)="writeMessage(message.value)" action="" name="form">
+  <form (submit)="writeMessage(message.value)" name="form">
       <label for="message"></label>
       <input type="text" #message name=""  placeholder="Say Something" required>
       <button type="submit" required>Send</button>
